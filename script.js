@@ -1,1 +1,3 @@
-// Wait for the DOM to fully load before attaching event listeners document.addEventListener("DOMContentLoaded", function() { // Get the start button by its ID const startButton = document.getElementById("start-button"); // Add event listener for button click startButton.addEventListener("click", startGame); }); // Define the startGame function function startGame() { // Get the player's name from the input field const playerName = document.getElementById("player-name").value; // Check if the player name is empty if (playerName.trim() === "") { alert("Please enter your name!"); return; } // If the name is valid, start the game (for now, just an alert) alert(`Hello, ${playerName}! Let's start your adventure!`); }
+function startGame() {
+  alert("Game started!");
+}
